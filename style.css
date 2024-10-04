@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8; /* Light background color for all pages */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Increased max-width for a better layout */
+    margin: 20px; /* Added margin for better spacing on smaller screens */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for better contrast */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Darker label color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Increased padding for a more spacious feel */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; /* Adjusted font size for inputs */
+    transition: border-color 0.3s ease; /* Smooth transition effect */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Focus color */
+    outline: none; /* Remove default outline */
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for button */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.message {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.message a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold; /* Bold link for better visibility */
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
+
+/* Specific styles for the welcome page */
+#logoutButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #dc3545; /* Logout button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for button */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+#logoutButton:hover {
+    background-color: #c82333; /* Darker shade on hover for logout */
+}
+
+#welcomeMessage {
+    text-align: center;
+    color: #333; /* Text color for welcome message */
+    margin-top: 10px; /* Spacing for the message */
+}
